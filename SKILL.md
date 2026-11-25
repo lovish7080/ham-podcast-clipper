@@ -8,7 +8,7 @@ description: HAM Podcast Clipper Skill (Hollow Arc Media) — find the best shor
 Part 1 of a 2-skill workflow. This skill **finds and cuts the raw clip** (16:9, source resolution, plain cuts) and writes a **cut list** that the separate *podcast-editing* skill picks up (captions, B-roll, reframing, graphics happen there — not here).
 
 ## Files this skill depends on
-Everything lives in the user's connected folder **`Podcast Clips/_skill/`** (on Lovish's Mac: `~/My Editing Workspace/Claude Workspace/Podcast Clips/_skill/`). At the start of every run, stage these into the workspace (device_stage_files) and read the references:
+Everything lives in the user's connected folder **`Podcast Clips/_skill/`** (wherever on their Mac they keep it; find its path with `get_device_info` → `connectedFolders`). At the start of every run, stage these into the workspace (device_stage_files) and read the references:
 - `references/rules.md` — **the rules, numbers, selection criteria and scoring checklist. Read it first, every run.**
 - `references/examples.md` — condensed reference + approved test clips.
 - `references/youtube_transcript.js` — built-in-browser snippet that reads a YouTube transcript without downloading.
